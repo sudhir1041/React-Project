@@ -1,5 +1,5 @@
 import { useSelector,useDispatch } from "react-redux";
-import { addTask} from "./TodoSlice";
+import { addTask,deleteTask,taskComplete,reOpen} from "./TodoSlice";
 import { useState } from "react";
 
 
@@ -9,8 +9,18 @@ const App=()=>{
   const [textval, setTextval] = useState("");
   console.log(myTask);
 
+  const DeleteTask=(id)=>{
+    dispatch(deleteTask({id:id}));
+  }
+  const CompleteTask=(id)=>{
+    dispatch(taskComplete({id:id}));
+  }
+  const Reopen=(id)=>{
+    dispatch(reOpen({id:id}));
+  }
+
   const addData=()=>{
-    dispatch(addTask({"id":Date.now(),"work":textval}))
+    dispatch(addTask({"id":Date.now(),"work":textval, "status":true}))
   }
 let i=0;
   const ans=myTask.map((value)=>{
@@ -19,7 +29,13 @@ let i=0;
       <>
       <tr>
         <td align="center">{i}</td>
-        <td align="center">{value.work}</td>
+      <td align="center">
+  {value.status ? value.work : <span style={{ color: 'red', textDecoration: 'line-through' }}>{value.work}</span>}
+</td>
+
+        <td align="center"><button onClick={()=>{DeleteTask(value.id)}}>Delete</button></td>
+        <td><button onClick={()=>{CompleteTask(value.id)}}>Complete</button></td>
+        <td><button onClick={()=>{Reopen(value.id)}}>Reopen Task</button></td>
       </tr>
       </>
     )
@@ -37,6 +53,7 @@ let i=0;
         <tr>
           <th >Sn No.</th>
           <th>Task</th>
+          <th></th>
         </tr>
         {ans}
       </table>
