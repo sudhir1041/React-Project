@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.main{
+    color: red;
+    font-size: 35px;
+    font-weight: bold;
+}
+.data{
+    color: blue;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.ext{
+    color: green;
+    font-size: 30px;
+}

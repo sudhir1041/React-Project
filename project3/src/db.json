@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "name": "Sudhir Kumar",
+      "userid": "sudhir1041",
+      "email": "sudhir@gmail.com",
+      "password": "Sudhir@123",
+      "id": "9a64"
+    },
+    {
+      "name": "Ashutosh Kumar",
+      "userid": "ashu",
+      "email": "Ashutosh@gmail.com",
+      "password": "Ashutosh@123",
+      "id": "b6c1"
+    },
+    {
+      "id": "091b",
+      "name": "Deeksha",
+      "userid": "dikku",
+      "email": "dikku@gmail.com",
+      "password": "d12345"
+    },
+    {
+      "id": "d371",
+      "name": "Satish Kumar",
+      "userid": "satish",
+      "email": "satish@gmail.com",
+      "password": "s12345"
+    }
+  ]
+}

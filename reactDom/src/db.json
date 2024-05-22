@@ -1,0 +1,25 @@
+{
+  "students": [
+    {
+      "id": "b28e",
+      "rollno": "12",
+      "name": "Sudhir Kumar",
+      "city": "Hajipur",
+      "fees": "5000"
+    },
+    {
+      "id": "b974",
+      "rollno": "13",
+      "name": "Ashutosh Kumar",
+      "city": "Bhopal",
+      "fees": "520000"
+    },
+    {
+      "id": "91c9",
+      "rollno": "14",
+      "name": "Deeksah Sharma",
+      "city": "Bhopal",
+      "fees": "49000"
+    }
+  ]
+}

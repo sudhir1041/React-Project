@@ -1,0 +1,17 @@
+body{
+    background-color: blueviolet;
+}
+#data{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.emp{
+    width: 30%;
+    border: 3px solid red;
+    border-radius: 20px;
+    color: rgb(212, 33, 33);
+    background-color:chartreuse;
+    margin-top: 5%;
+}
